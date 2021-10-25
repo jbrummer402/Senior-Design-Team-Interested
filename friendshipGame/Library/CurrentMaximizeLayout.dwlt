@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 471}
   m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
-  controlID: 15
+  controlID: 13164
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 16
+  controlID: 13165
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 13166
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 54fbffff
+      m_ExpandedIDs: fecfffff1af7ffff54fbffff023d0000223d00009e3d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1440.7827, y: 481.8651, z: -1289.9963}
+    m_Target: {x: 1170.7258, y: 700.02136, z: -1374.3201}
     speed: 2
-    m_Value: {x: 1440.7827, y: 481.8651, z: -1289.9963}
+    m_Value: {x: 1170.7258, y: 700.02136, z: -1374.3201}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,9 +361,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 648.83636
+    m_Target: 831.36194
     speed: 2
-    m_Value: 648.83636
+    m_Value: 831.36194
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -432,8 +432,8 @@ MonoBehaviour:
     y: 527
     width: 1379
     height: 390
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 90
-  m_LastProjectPath: C:\Users\elijah\seniorDevFriendship
+  m_LastProjectPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -521,7 +521,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000523e0000
+    m_ExpandedIDs: 00000000523e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
