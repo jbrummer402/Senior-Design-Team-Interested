@@ -13,9 +13,201 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-10-25T15:03:52.330-04:00
-  initializedAtString: 2021-10-25T15:03:52.330-04:00
+  lastUpdatedAtString: 2021-10-31T20:10:27.713-04:00
+  initializedAtString: 2021-10-31T16:00:37.987-04:00
   log:
+  - commitID: fbc0aa6f5ef42f00ea12ed4c574ffcd6c7b2d1e8
+    mergeA: 
+    mergeB: 
+    authorName: ezwendel
+    authorEmail: ezwendel@gmail.com
+    commitEmail: ezwendel@gmail.com
+    commitName: ezwendel
+    summary: Scene Select
+    description: 
+    timeString: 2021-10-25T15:19:05.000-04:00
+    commitTimeString: 2021-10-25T15:19:05.000-04:00
+    changes:
+    - path: friendshipGame\.gitignore
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\Scenes\SampleScene.unity
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\ArtifactDB
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\CurrentMaximizeLayout.dwlt
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\CurrentMaximizeLayout.dwlt
+      projectPath: Library\CurrentMaximizeLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\EditorInstance.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\PackageManager\ProjectCache
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\PackageManager\ProjectCache
+      projectPath: Library\PackageManager\ProjectCache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\PackageManager\ProjectCache.md5
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\PackageManager\ProjectCache.md5
+      projectPath: Library\PackageManager\ProjectCache.md5
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\SceneVisibilityState.asset
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SceneVisibilityState.asset
+      projectPath: Library\SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\SourceAssetDB
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      projectPath: Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      projectPath: Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\AssetImportWorker0-prev.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\AssetImportWorker0-prev.log
+      projectPath: Logs\AssetImportWorker0-prev.log
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe1.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe1.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe1.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 8ae5f1ff07744e97e23a3d45eec209d4dcb70a8c
     mergeA: 
     mergeB: 

@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MenuController : MonoBehaviour
 {
+    // [Header("Volume Settings")]
+    // [SerializeField] private TMP_Text musicVolumeTextVal = null;
+    // [SerializeField] private Slider musicVolumeSlider = null;
+    // [SerializeField] private TMP_Text voiceVolumeTextVal = null;
+    // [SerializeField] private Slider voiceVolumeSlider = null;
+
+    // [SerializeField] private GameObject confirmationPrompt = null;
+
     [Header("Levels To Load")]
     public string _newGameLevel;
     private string levelToLoad;
@@ -28,4 +37,24 @@ public class MenuController : MonoBehaviour
             noSavedGameDialog.SetActive(true);
         }
     }
+
+    // public void SetVolume(float volume)
+    // {
+    //     AudioListener.volume = volume;
+    //     volumeTextVal.text = volume.ToString("0.0");
+    // }
+
+    // public void VolumeApply()
+    // {
+    //     PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
+    //     // PlayerPrefs.SetBool("voiceActing", true);
+    //     StartCoroutine(ConfirmationBox());
+    // }
+
+    // public IEnumerator ConfirmationBox()
+    // {
+    //     confirmationPrompt.SetActive(true);
+    //     yield return new WaitForSeconds(2);
+    //     confirmationPrompt.SetActive(false);
+    // }
 }
