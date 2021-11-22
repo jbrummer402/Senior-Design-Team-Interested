@@ -26,7 +26,7 @@ public class Scene1Script : MonoBehaviour
     void Start()
     {
         CharName.text = FirstChar;
-        string[] initialDialogue = new string[]{"1-1", "1-2", "1-3", "1-4"};
+        string[] initialDialogue = new string[]{"Sample text for typing purposes", "A pretty long sentence just to see how the scrolling thing works and whether or not speed should be adjusted.", "1-3", "1-4"};
         Sentences = new Queue<string>();
 
         Response1Btn.gameObject.SetActive(false);
@@ -46,13 +46,26 @@ public class Scene1Script : MonoBehaviour
     {
         ContinueBtn.gameObject.SetActive(true);
         string sentence = Sentences.Dequeue();
-        PromptText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
 
         if (Sentences.Count == 0)
         {
             ContinueBtn.gameObject.SetActive(false);
             DisplayButtons();
             return;
+        }
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        PromptText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            PromptText.text += letter;
+            for (int i = 0; i < 5; i++) {
+                yield return null;
+            }
         }
     }
 
@@ -70,6 +83,11 @@ public class Scene1Script : MonoBehaviour
                 Response1Text.text = "2";
                 Response2Text.text = "3";
                 Response3Text.text = "4";
+                break;
+            case "2":
+                Response1Text.text = "5";
+                Response2Text.text = "6";
+                Response3Text.text = "7";
                 break;
         }
     }
@@ -119,6 +137,26 @@ public class Scene1Script : MonoBehaviour
                         break;
                 }
                 break;
+            case "2":
+                switch(Pressed)
+                {
+                    case 1:
+                        PlayerPrefs.SetString(Scene1Pos, "5");
+                        dialogue = new string[]{"5-1", "5-2"};
+                        queueDialogue(dialogue);
+                        break;
+                    case 2:
+                        PlayerPrefs.SetString(Scene1Pos, "6");
+                        dialogue = new string[]{"6-1", "6-2", "6-3"};
+                        queueDialogue(dialogue);
+                        break;
+                    case 3:
+                        PlayerPrefs.SetString(Scene1Pos, "7");
+                        dialogue = new string[]{"7-1", "7-2", "7-3"};
+                        queueDialogue(dialogue);
+                        break;
+                }
+                break;
         }
 
         ContinueDialogue();
@@ -131,5 +169,15 @@ public class Scene1Script : MonoBehaviour
             Debug.Log(sentence);
             Sentences.Enqueue(sentence);
         }
+    }
+
+    void enterMicrogame(string gameScene)
+    {
+        SceneManager.LoadScene(gameScene);
+    }
+
+    void incorrectAnswer(string reasoning)
+    {
+        
     }
 }
