@@ -4,29 +4,135 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Newtonsoft.Json;
+using System.IO;
 
 public class Scene1Script : MonoBehaviour
 {
+    public class Dialog 
+    {
+        private string path;
+        public string title;
+        public string response;
+        public string who;
+        public string ptr;
+        public Dialog[] options;
+
+        public static Dialog CreateFromJSON(string jsonString) {
+            Dialog d = JsonConvert.DeserializeObject<Dialog>(jsonString);
+            d.fillPaths("1");
+            return d;
+        }
+
+        public static void fillPaths(Dialog d) {
+            if(d.options != null) {
+                for(int i=0; i<d.options.Length; ++i){
+                    d.options[i].path = d.path + "/" + (i+1);
+                    fillPaths(d.options[i]);
+                }
+            }
+        }
+
+
+        public void fillPaths(string path) {
+            this.path = path;
+            fillPaths(this);
+        }
+
+        public string GetPath() {
+            return this.path;
+        }
+    }
+
+
+
     [Header("Scene Objects")]
     [SerializeField] private TMP_Text Response1Text = null;
     [SerializeField] private TMP_Text Response2Text = null;
-    [SerializeField] private TMP_Text Response3Text = null;
+    [SerializeField] private TMP_Text Response3Text = null; 
     [SerializeField] private Button ContinueBtn = null;
-    [SerializeField] private Button Response1Btn = null;
+    [SerializeField] private Button Response1Btn = null; 
     [SerializeField] private Button Response2Btn = null;
     [SerializeField] private Button Response3Btn = null;
     [SerializeField] private TMP_Text PromptText = null;
     [SerializeField] private TMP_Text CharName = null;
     [SerializeField] private Image CharImage = null;
     private string FirstChar = "FirstChar";
-    private string Scene1Pos = "Scene1Pos";
+    private string Scene1Pos = "1";
     private Queue<string> Sentences;
+    private Dialog rootDialog;
+
+    Dialog getDialog(string path) { 
+        //1-1-1 -> rootDialog.options[0].options[0]
+        Dialog d = rootDialog;
+        string[] pathArr = path.Split('/');
+        
+        for(int i=1; i<pathArr.Length; ++i) { // Starting at 1 to exclude the root path
+            d = d.options[int.Parse(pathArr[i])-1];
+        }
+
+        return d;
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        CharName.text = FirstChar;
-        string[] initialDialogue = new string[]{"Sample text for typing purposes", "A pretty long sentence just to see how the scrolling thing works and whether or not speed should be adjusted.", "1-3", "1-4"};
+        ///TODO load from a file
+        string jsonDialog = @"{
+            ""title"":""1"",
+            ""response"": ""a. a. a"",
+            ""who"": ""charA"",
+            ""options"":[
+	            {
+		            ""title"":""1/1 hfjgkds"",
+                    ""response"": ""b"",
+                    ""who"": ""charA"",
+		            ""options"":[
+		            {
+			            ""title"":""1/1/1"",
+                        ""response"": ""c"",
+                        ""who"": ""charA"",
+			            ""options"":[
+				            {
+					            ""title"": ""1/1/1/1"",
+                                ""response"": ""d\fd\fd\fgoodbye"",
+                                ""who"": ""charA"",
+					            ""options"": []
+				            },
+                            {
+                                ""title"": ""hi"",
+					            ""ptr"": ""1/2""
+				            }
+			            ]
+		            }
+		            ]
+	            },
+	            {
+		            ""title"":""1/2"",
+                    ""response"": ""f"",
+                    ""who"": ""charA"",
+		            ""options"":[
+                    {
+			            ""ptr"": ""1/1""
+		            },
+                    {
+			            ""title"": ""1/2/2"",
+                        ""response"": ""h"",
+                        ""who"": ""charA"",
+                        ""options"": [
+                            {
+			                    ""ptr"": ""1/1/1""
+		                    },
+                        ]
+		            } 
+                ]
+	            }
+            ]
+        }";
+        rootDialog = Dialog.CreateFromJSON(jsonDialog);
+        
+        CharName.text = rootDialog.who;
         Sentences = new Queue<string>();
 
         Response1Btn.gameObject.SetActive(false);
@@ -35,9 +141,7 @@ public class Scene1Script : MonoBehaviour
         
         PlayerPrefs.SetString(Scene1Pos, "1");
 
-        queueDialogue(initialDialogue);
-
-        Debug.Log(Sentences);
+        queueDialogue(rootDialog);
         
         ContinueDialogue();
     }
@@ -45,7 +149,9 @@ public class Scene1Script : MonoBehaviour
     public void ContinueDialogue()
     {
         ContinueBtn.gameObject.SetActive(true);
+        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
         string sentence = Sentences.Dequeue();
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
@@ -55,6 +161,9 @@ public class Scene1Script : MonoBehaviour
             DisplayButtons();
             return;
         }
+
+        
+
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -69,32 +178,44 @@ public class Scene1Script : MonoBehaviour
         }
     }
 
-    void DisplayButtons()
-    {
-        Response1Btn.gameObject.SetActive(true);
-        Response2Btn.gameObject.SetActive(true);
-        Response3Btn.gameObject.SetActive(true);
+    void DisplayButtons() {
+        Response1Btn.gameObject.SetActive(false);
+        Response2Btn.gameObject.SetActive(false);
+        Response3Btn.gameObject.SetActive(false);
 
         string currentLocation = PlayerPrefs.GetString(Scene1Pos);
-        
-        switch(currentLocation)
-        {
-            case "1":
-                Response1Text.text = "2";
-                Response2Text.text = "3";
-                Response3Text.text = "4";
-                break;
-            case "2":
-                Response1Text.text = "5";
-                Response2Text.text = "6";
-                Response3Text.text = "7";
-                break;
+       
+
+        ///TODO null check
+        Dialog d = getDialog(currentLocation);
+        ///TODO Support mre than 3 buttons
+        List<string> responses = new List<string>();
+        foreach(Dialog option in d.options) {
+            if(option.ptr != null && option.title == null)
+                responses.Add(getDialog(option.ptr).title);
+            else
+                responses.Add(option.title);
+            
+        }
+
+        if(responses.Count > 0) {
+            Response1Btn.gameObject.SetActive(true);
+            Response1Text.text = responses[0];
+
+        }
+        if(responses.Count > 1) {
+            Response2Btn.gameObject.SetActive(true);
+            Response2Text.text = responses[1];
+        }
+        if(responses.Count > 2) {
+            Response3Btn.gameObject.SetActive(true);
+            Response3Text.text = responses[2];
         }
     }
 
     public void ClickOne()
     {
-        ClickHandler(1);   
+        ClickHandler(1);
     }
 
     public void ClickTwo()
@@ -113,60 +234,32 @@ public class Scene1Script : MonoBehaviour
         Response1Btn.gameObject.SetActive(false);
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
-        string[] dialogue;
 
-        switch(currentLocation)
-        {
-            case "1":
-                switch(Pressed)
-                {
-                    case 1:
-                        PlayerPrefs.SetString(Scene1Pos, "2");
-                        dialogue = new string[]{"2-1", "2-2"};
-                        queueDialogue(dialogue);
-                        break;
-                    case 2:
-                        PlayerPrefs.SetString(Scene1Pos, "3");
-                        dialogue = new string[]{"3-1", "3-2", "3-3"};
-                        queueDialogue(dialogue);
-                        break;
-                    case 3:
-                        PlayerPrefs.SetString(Scene1Pos, "4");
-                        dialogue = new string[]{"4-1", "4-2", "4-3"};
-                        queueDialogue(dialogue);
-                        break;
-                }
-                break;
-            case "2":
-                switch(Pressed)
-                {
-                    case 1:
-                        PlayerPrefs.SetString(Scene1Pos, "5");
-                        dialogue = new string[]{"5-1", "5-2"};
-                        queueDialogue(dialogue);
-                        break;
-                    case 2:
-                        PlayerPrefs.SetString(Scene1Pos, "6");
-                        dialogue = new string[]{"6-1", "6-2", "6-3"};
-                        queueDialogue(dialogue);
-                        break;
-                    case 3:
-                        PlayerPrefs.SetString(Scene1Pos, "7");
-                        dialogue = new string[]{"7-1", "7-2", "7-3"};
-                        queueDialogue(dialogue);
-                        break;
-                }
-                break;
+        
+        currentLocation += "/" + Pressed;
+        Dialog d = getDialog(currentLocation);
+
+
+        if(d.ptr != null) {
+            currentLocation = getDialog(d.ptr).GetPath();
         }
-
+        PlayerPrefs.SetString(Scene1Pos, currentLocation);
+        queueDialogue(d);
         ContinueDialogue();
     }
 
-    void queueDialogue(string[] dialogue)
+    void queueDialogue(Dialog d)
     {
-        foreach (string sentence in dialogue)
+        if(d.ptr != null) {
+            d = getDialog(d.ptr);
+        }
+        if(d.who != "")
+            CharName.text = d.who;
+        if(d.response == null || d.response == "") {
+            Sentences.Enqueue("A SENTENCE WAS NULL HOW DID THIS HAPPEN");
+        }
+        else foreach (string sentence in d.response.Split('\f'))
         {
-            Debug.Log(sentence);
             Sentences.Enqueue(sentence);
         }
     }
