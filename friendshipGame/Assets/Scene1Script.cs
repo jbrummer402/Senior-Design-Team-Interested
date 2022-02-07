@@ -80,55 +80,69 @@ public class Scene1Script : MonoBehaviour
     {
         ///TODO load from a file
         string jsonDialog = @"{
-            ""title"":""1"",
-            ""response"": ""a. a. a"",
-            ""who"": ""charA"",
-            ""options"":[
-	            {
-		            ""title"":""1/1 hfjgkds"",
-                    ""response"": ""b"",
-                    ""who"": ""charA"",
-		            ""options"":[
-		            {
-			            ""title"":""1/1/1"",
-                        ""response"": ""c"",
-                        ""who"": ""charA"",
-			            ""options"":[
-				            {
-					            ""title"": ""1/1/1/1"",
-                                ""response"": ""d\fd\fd\fgoodbye"",
-                                ""who"": ""charA"",
-					            ""options"": []
-				            },
-                            {
-                                ""title"": ""hi"",
-					            ""ptr"": ""1/2""
-				            }
-			            ]
-		            }
-		            ]
-	            },
-	            {
-		            ""title"":""1/2"",
-                    ""response"": ""f"",
-                    ""who"": ""charA"",
-		            ""options"":[
-                    {
-			            ""ptr"": ""1/1""
-		            },
-                    {
-			            ""title"": ""1/2/2"",
-                        ""response"": ""h"",
-                        ""who"": ""charA"",
-                        ""options"": [
-                            {
-			                    ""ptr"": ""1/1/1""
-		                    },
-                        ]
-		            } 
-                ]
-	            }
-            ]
+	        ""title"":""Begin"",
+	        ""response"": ""Time to get dressed. What outfit would you like to wear?"",
+	        ""who"": "" "",
+	        ""options"":[
+		        {
+			        ""title"":""Tuxedo and a Suit"",
+			        ""response"": ""That seems a bit much for the occasion. A more casual outfit would be better suited.\fWhat outfit would you like to wear?"",
+			        ""ptr"": ""1""
+		        },
+		        {
+			        ""title"":""Jeans/khakis and a polo/button-up shirt"",
+                    ""response"": ""Good choice! Time to pack now"",
+			        ""options"": [
+				        {
+					        ""title"": ""[packing game placeholder]"",
+					        ""response"": ""It's time for breakfast. What do you want to eat?"",
+					        ""options"": [
+						        {
+							        ""title"": ""Fruit"",
+							        ""response"": ""That is a good and healthy choice. You feel ready to take on the day!"",
+								        ""options"": [
+									        {
+										        ""title"": ""[hygeine game]"",
+										        ""response"": ""It's time to go now. You're destination is 30 minutes away. When should you leave to arrive on time by 11:00"",
+										        ""options"": [
+											        {
+												        ""title"": ""10:20"",
+												        ""response"": ""You get there 10 minutes before everyone. It may be better to leave slightly later next time.""
+												
+											        },
+											        {
+												        ""title"": ""10:30"",
+												        ""response"": ""You show up on time and begin studying.""
+												
+											        },									
+											        {
+												        ""title"": ""10:40"",
+												        ""response"": ""You get there 10 minutes after everyone. It may be better to leave slightly earlier next time.""
+											        }
+										        ]
+									        }
+								        ]
+						        },
+						        {
+							        ""title"": ""Cracker"",
+							        ""response"": ""Fruit may have been a better option."",
+							        ""ptr"": ""1/2/1/1""
+						        },
+						        {
+							        ""title"": ""Candy bar"",
+							        ""response"": ""Fruit may have been a better option."",
+							        ""ptr"": ""1/2/1/1""
+						        }
+					        ]
+				        }
+			        ]
+		        },
+		        {
+			        ""title"":""Shorts and a t-shirt"",
+			        ""response"": ""It may be a better idea to be slightly better dressed for the occasion.\fTime to pack now"",
+			        ""ptr"": ""1/2""
+		        }
+	        ]
         }";
         rootDialog = Dialog.CreateFromJSON(jsonDialog);
         
@@ -239,22 +253,25 @@ public class Scene1Script : MonoBehaviour
         currentLocation += "/" + Pressed;
         Dialog d = getDialog(currentLocation);
 
-
+        queueDialogue(d);
+        
         if(d.ptr != null) {
             currentLocation = getDialog(d.ptr).GetPath();
         }
+        
         PlayerPrefs.SetString(Scene1Pos, currentLocation);
-        queueDialogue(d);
         ContinueDialogue();
+
+        //ContinueDialogue();
     }
 
     void queueDialogue(Dialog d)
     {
-        if(d.ptr != null) {
+        /*if(d.ptr != null) {
             d = getDialog(d.ptr);
-        }
+        }*/
         if(d.who != "")
-            CharName.text = d.who;
+            CharName.text = d.who;            
         if(d.response == null || d.response == "") {
             Sentences.Enqueue("A SENTENCE WAS NULL HOW DID THIS HAPPEN");
         }
