@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-11-21T21:23:56.931-05:00
-  initializedAtString: 2021-11-21T17:55:42.296-05:00
+  lastUpdatedAtString: 2022-02-16T15:59:36.748-05:00
+  initializedAtString: 2022-02-16T15:07:35.154-05:00
   localBranches:
+  - name: elijah-dev
+    tracking: origin/elijah-dev
   - name: main
     tracking: origin/main
   remoteBranches:
+  - name: origin/elijah-dev
+    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/main
@@ -33,8 +37,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - elijah-dev
     - main
     values:
+    - name: elijah-dev
+      remote:
+        name: origin
+        url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+      trackingBranch: elijah-dev
     - name: main
       remote:
         name: origin
@@ -45,10 +55,16 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - elijah-dev
       - HEAD
       - main
     subKeyValues:
     - Values:
+      - name: elijah-dev
+        remote:
+          name: origin
+          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+        trackingBranch: 
       - name: HEAD
         remote:
           name: origin

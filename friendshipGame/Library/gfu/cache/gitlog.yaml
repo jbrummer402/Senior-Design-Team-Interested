@@ -13,9 +13,604 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-11-21T21:23:04.219-05:00
-  initializedAtString: 2021-11-21T19:35:16.888-05:00
+  lastUpdatedAtString: 2022-02-16T15:31:30.911-05:00
+  initializedAtString: 2022-02-16T15:07:38.192-05:00
   log:
+  - commitID: 70d227eeb05a164a2aa5dcd8787610d0be72d8aa
+    mergeA: 
+    mergeB: 
+    authorName: Grady McDowell
+    authorEmail: gradyrmcd@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Added dialog with some placeholders for now
+    description: 
+    timeString: 2022-02-06T20:56:50.000-05:00
+    commitTimeString: 2022-02-06T20:56:50.000-05:00
+    changes:
+    - path: friendshipGame\Assets\Scene1Script.cs
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scene1Script.cs
+      projectPath: Assets\Scene1Script.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2e39802eb12c122edf69b298e095dc5caa0d12ce
+    mergeA: 
+    mergeB: 
+    authorName: Grady McDowell
+    authorEmail: gradyrmcd@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update Scene1Script.cs
+    description: Added basic support for reading dialog from json with a placeholder
+      defined inline for now.
+    timeString: 2022-02-03T17:22:52.000-05:00
+    commitTimeString: 2022-02-03T17:22:52.000-05:00
+    changes:
+    - path: friendshipGame\Assets\Scene1Script.cs
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scene1Script.cs
+      projectPath: Assets\Scene1Script.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: ecb91c3b2ecab741c0745902cfc313304f0b070d
+    mergeA: 
+    mergeB: 
+    authorName: ezwendel
+    authorEmail: ezwendel@gmail.com
+    commitEmail: ezwendel@gmail.com
+    commitName: ezwendel
+    summary: menu accessible from game, typing now scrolls
+    description: 
+    timeString: 2021-11-21T21:32:18.000-05:00
+    commitTimeString: 2021-11-21T21:32:18.000-05:00
+    changes:
+    - path: friendshipGame\Assets\MenuControllerIngame.cs
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\MenuControllerIngame.cs
+      projectPath: Assets\MenuControllerIngame.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\MenuControllerIngame.cs.meta
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\MenuControllerIngame.cs.meta
+      projectPath: Assets\MenuControllerIngame.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\Scene1Script.cs
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scene1Script.cs
+      projectPath: Assets\Scene1Script.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\Scenes\MainMenu.unity
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\MainMenu.unity
+      projectPath: Assets\Scenes\MainMenu.unity
+      originalPath: friendshipGame\Assets\Scenes\SampleScene.unity
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\Scenes\MainMenu.unity.meta
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\MainMenu.unity.meta
+      projectPath: Assets\Scenes\MainMenu.unity.meta
+      originalPath: friendshipGame\Assets\Scenes\SampleScene.unity.meta
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Assets\Scenes\TalkingSections.unity
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\TalkingSections.unity
+      projectPath: Assets\Scenes\TalkingSections.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\ArtifactDB
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\02\0230dc0daae7ccf0d61851fe7805f68f
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\02\0230dc0daae7ccf0d61851fe7805f68f
+      projectPath: Library\Artifacts\02\0230dc0daae7ccf0d61851fe7805f68f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\03\03c821ef5a6c31051aa5ab46c1a48abd
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\03\03c821ef5a6c31051aa5ab46c1a48abd
+      projectPath: Library\Artifacts\03\03c821ef5a6c31051aa5ab46c1a48abd
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\08\088dc98833b15fc19289bd6042d02620
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\08\088dc98833b15fc19289bd6042d02620
+      projectPath: Library\Artifacts\08\088dc98833b15fc19289bd6042d02620
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\0a\0a0b73bbdbbbc4d3095d3fc70e611991
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\0a\0a0b73bbdbbbc4d3095d3fc70e611991
+      projectPath: Library\Artifacts\0a\0a0b73bbdbbbc4d3095d3fc70e611991
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\11\113a7f4ee82b102bc77354b0b7652bff
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\11\113a7f4ee82b102bc77354b0b7652bff
+      projectPath: Library\Artifacts\11\113a7f4ee82b102bc77354b0b7652bff
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\19\1967424400af4f5cc31fd8f98a95fea4
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\19\1967424400af4f5cc31fd8f98a95fea4
+      projectPath: Library\Artifacts\19\1967424400af4f5cc31fd8f98a95fea4
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\1a\1ad69cefc184d14ba898d28082bac9ae
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\1a\1ad69cefc184d14ba898d28082bac9ae
+      projectPath: Library\Artifacts\1a\1ad69cefc184d14ba898d28082bac9ae
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\1c\1c8a6a248f4c043194693758a90b823e
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\1c\1c8a6a248f4c043194693758a90b823e
+      projectPath: Library\Artifacts\1c\1c8a6a248f4c043194693758a90b823e
+      originalPath: friendshipGame\Library\Artifacts\9e\9e8da8963c1e3363ee9e14f6e290f450
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\20\20ad84b0601d461c152fb4d0ead6ec56
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\20\20ad84b0601d461c152fb4d0ead6ec56
+      projectPath: Library\Artifacts\20\20ad84b0601d461c152fb4d0ead6ec56
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\21\216d82c816fa9e370e9a529fb0bb060c
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\21\216d82c816fa9e370e9a529fb0bb060c
+      projectPath: Library\Artifacts\21\216d82c816fa9e370e9a529fb0bb060c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\27\27a43d7a9cbfa8373b9c52701a6a4c01
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\27\27a43d7a9cbfa8373b9c52701a6a4c01
+      projectPath: Library\Artifacts\27\27a43d7a9cbfa8373b9c52701a6a4c01
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\2a\2ac2a06bfbe282ae4d28c7e73b3dd9c8
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\2a\2ac2a06bfbe282ae4d28c7e73b3dd9c8
+      projectPath: Library\Artifacts\2a\2ac2a06bfbe282ae4d28c7e73b3dd9c8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\2b\2bd388758c69306c51243b17bf5a2b60
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\2b\2bd388758c69306c51243b17bf5a2b60
+      projectPath: Library\Artifacts\2b\2bd388758c69306c51243b17bf5a2b60
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\2c\2cac31dcbaba6aecb94713afaae2c678
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\2c\2cac31dcbaba6aecb94713afaae2c678
+      projectPath: Library\Artifacts\2c\2cac31dcbaba6aecb94713afaae2c678
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\31\3173b5635fe4728135ec899492f1493e
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\31\3173b5635fe4728135ec899492f1493e
+      projectPath: Library\Artifacts\31\3173b5635fe4728135ec899492f1493e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\35\35def34a39193460a17ed1fbe7093ae9
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\35\35def34a39193460a17ed1fbe7093ae9
+      projectPath: Library\Artifacts\35\35def34a39193460a17ed1fbe7093ae9
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\4c\4ce0ace3cf2dc1811699a452db124bbc
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\4c\4ce0ace3cf2dc1811699a452db124bbc
+      projectPath: Library\Artifacts\4c\4ce0ace3cf2dc1811699a452db124bbc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\4d\4d9419ca2625f5735a7eb59d18a32203
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\4d\4d9419ca2625f5735a7eb59d18a32203
+      projectPath: Library\Artifacts\4d\4d9419ca2625f5735a7eb59d18a32203
+      originalPath: friendshipGame\Library\Artifacts\77\77aa002ba1752ed563a4649c38fce594
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\4d\4d99d1ad457f78f5d5be4c19d90a5efd
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\4d\4d99d1ad457f78f5d5be4c19d90a5efd
+      projectPath: Library\Artifacts\4d\4d99d1ad457f78f5d5be4c19d90a5efd
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\4d\4d9a5add1e9503be8ac3e2bc2c1b40c0
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\4d\4d9a5add1e9503be8ac3e2bc2c1b40c0
+      projectPath: Library\Artifacts\4d\4d9a5add1e9503be8ac3e2bc2c1b40c0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\4f\4f9ea9e4b54f5643174fc10c8eff2ccd
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\4f\4f9ea9e4b54f5643174fc10c8eff2ccd
+      projectPath: Library\Artifacts\4f\4f9ea9e4b54f5643174fc10c8eff2ccd
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\59\593ecb63301a978c78c60ec2b0ccb833
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\59\593ecb63301a978c78c60ec2b0ccb833
+      projectPath: Library\Artifacts\59\593ecb63301a978c78c60ec2b0ccb833
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\68\681d2a3cd3a5d02556750433e9d6f65b
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\68\681d2a3cd3a5d02556750433e9d6f65b
+      projectPath: Library\Artifacts\68\681d2a3cd3a5d02556750433e9d6f65b
+      originalPath: friendshipGame\Library\Artifacts\d0\d046e75cd595f952d8349cc3545f600c
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\6e\6e614f5134af9164a1275b20bf187e24
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\6e\6e614f5134af9164a1275b20bf187e24
+      projectPath: Library\Artifacts\6e\6e614f5134af9164a1275b20bf187e24
+      originalPath: friendshipGame\Library\Artifacts\bd\bd0c4e7cd8b9574e61c15a9fc06d1afe
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\71\71f97aa30a6b3c2e79b94f2c55444fa3
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\71\71f97aa30a6b3c2e79b94f2c55444fa3
+      projectPath: Library\Artifacts\71\71f97aa30a6b3c2e79b94f2c55444fa3
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\75\7579746cf74c301a17c9ef4e86d18061
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\75\7579746cf74c301a17c9ef4e86d18061
+      projectPath: Library\Artifacts\75\7579746cf74c301a17c9ef4e86d18061
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\7c\7ca4240083fdcc798f35689470efaff4
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\7c\7ca4240083fdcc798f35689470efaff4
+      projectPath: Library\Artifacts\7c\7ca4240083fdcc798f35689470efaff4
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\7f\7f6e7759438049b0956d36db942b06cc
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\7f\7f6e7759438049b0956d36db942b06cc
+      projectPath: Library\Artifacts\7f\7f6e7759438049b0956d36db942b06cc
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\80\8090e42e387b782991fb7115d9e76cbd
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\80\8090e42e387b782991fb7115d9e76cbd
+      projectPath: Library\Artifacts\80\8090e42e387b782991fb7115d9e76cbd
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\82\8280fe6f8c2eda57d54792db57b958ee
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\82\8280fe6f8c2eda57d54792db57b958ee
+      projectPath: Library\Artifacts\82\8280fe6f8c2eda57d54792db57b958ee
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\84\8464256eb2cfd7604479730ae4c25cfc
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\84\8464256eb2cfd7604479730ae4c25cfc
+      projectPath: Library\Artifacts\84\8464256eb2cfd7604479730ae4c25cfc
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\85\85cb2ec2033d8aa1a1570dc2d3515175
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\85\85cb2ec2033d8aa1a1570dc2d3515175
+      projectPath: Library\Artifacts\85\85cb2ec2033d8aa1a1570dc2d3515175
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\8f\8ff89e6819c61b08d0c667a929212f0e
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\8f\8ff89e6819c61b08d0c667a929212f0e
+      projectPath: Library\Artifacts\8f\8ff89e6819c61b08d0c667a929212f0e
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\9c\9cefeff4560ca502defe945103c2ae02
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\9c\9cefeff4560ca502defe945103c2ae02
+      projectPath: Library\Artifacts\9c\9cefeff4560ca502defe945103c2ae02
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\9d\9d233562e20cf901fa89c148264794c7
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\9d\9d233562e20cf901fa89c148264794c7
+      projectPath: Library\Artifacts\9d\9d233562e20cf901fa89c148264794c7
+      originalPath: friendshipGame\Library\Artifacts\55\551d372aa6f32856ed507ddf5a557cf1
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+      projectPath: Library\Artifacts\a1\a11bbf1d48e8e172c9ec0d1d09750ca0
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\ac\ac61e2ea41a1911de861bea9585539c3
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\ac\ac61e2ea41a1911de861bea9585539c3
+      projectPath: Library\Artifacts\ac\ac61e2ea41a1911de861bea9585539c3
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\af\afd44165ba6187880a6244128bdd0652
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\af\afd44165ba6187880a6244128bdd0652
+      projectPath: Library\Artifacts\af\afd44165ba6187880a6244128bdd0652
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\b0\b0081418299b84876419a4967ff1cf4c
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\b0\b0081418299b84876419a4967ff1cf4c
+      projectPath: Library\Artifacts\b0\b0081418299b84876419a4967ff1cf4c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\b3\b3a9036ed272a2b8fea0b3868bf5029f
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\b3\b3a9036ed272a2b8fea0b3868bf5029f
+      projectPath: Library\Artifacts\b3\b3a9036ed272a2b8fea0b3868bf5029f
+      originalPath: friendshipGame\Library\Artifacts\65\658c8a6229041b5e6dfd694229fad329
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\b8\b8b3c33404432fbd310924abe89d925b
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\b8\b8b3c33404432fbd310924abe89d925b
+      projectPath: Library\Artifacts\b8\b8b3c33404432fbd310924abe89d925b
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\bb\bb2058d548f7d58b2b27d28fc7ce95f4
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\bb\bb2058d548f7d58b2b27d28fc7ce95f4
+      projectPath: Library\Artifacts\bb\bb2058d548f7d58b2b27d28fc7ce95f4
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\bc\bc154b29ce6a9b6c7ffedf50b6df8e3a
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\bc\bc154b29ce6a9b6c7ffedf50b6df8e3a
+      projectPath: Library\Artifacts\bc\bc154b29ce6a9b6c7ffedf50b6df8e3a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\bd\bdb9386432aabdb16cdd9e1d1877e759
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\bd\bdb9386432aabdb16cdd9e1d1877e759
+      projectPath: Library\Artifacts\bd\bdb9386432aabdb16cdd9e1d1877e759
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\c1\c1f635522e6d04bb08fb2709d2fad873
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\c1\c1f635522e6d04bb08fb2709d2fad873
+      projectPath: Library\Artifacts\c1\c1f635522e6d04bb08fb2709d2fad873
+      originalPath: friendshipGame\Library\Artifacts\f8\f8c30798bcbe7da83d860acd6ed35b9c
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\dc\dc5faf1de8cc2e3596dd0513c36e86a5
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\dc\dc5faf1de8cc2e3596dd0513c36e86a5
+      projectPath: Library\Artifacts\dc\dc5faf1de8cc2e3596dd0513c36e86a5
+      originalPath: friendshipGame\Library\Artifacts\9b\9bbedc9ce0787956ff48f84eee66028a
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\e8\e872ed70456f106acddea1ba90f07364
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\e8\e872ed70456f106acddea1ba90f07364
+      projectPath: Library\Artifacts\e8\e872ed70456f106acddea1ba90f07364
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\ea\ea0b0ddba31720b84c589c3e74cc9462
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\ea\ea0b0ddba31720b84c589c3e74cc9462
+      projectPath: Library\Artifacts\ea\ea0b0ddba31720b84c589c3e74cc9462
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\f2\f2242f8ce5017b513c944076c632936d
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\f2\f2242f8ce5017b513c944076c632936d
+      projectPath: Library\Artifacts\f2\f2242f8ce5017b513c944076c632936d
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\f2\f24bff48b8b81faae9cd6e65504b8414
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\f2\f24bff48b8b81faae9cd6e65504b8414
+      projectPath: Library\Artifacts\f2\f24bff48b8b81faae9cd6e65504b8414
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\f5\f530c7e3a0d8260e9e39fe72108648ac
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\f5\f530c7e3a0d8260e9e39fe72108648ac
+      projectPath: Library\Artifacts\f5\f530c7e3a0d8260e9e39fe72108648ac
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\f7\f73353e4b7a18ea7634f4ba0ebb0f30a
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\f7\f73353e4b7a18ea7634f4ba0ebb0f30a
+      projectPath: Library\Artifacts\f7\f73353e4b7a18ea7634f4ba0ebb0f30a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\fa\fa3b219a5bcfb8e23420fc594e98e656
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\fa\fa3b219a5bcfb8e23420fc594e98e656
+      projectPath: Library\Artifacts\fa\fa3b219a5bcfb8e23420fc594e98e656
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\fa\fa8c4d3a240022227b2de16873cd30c0
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\fa\fa8c4d3a240022227b2de16873cd30c0
+      projectPath: Library\Artifacts\fa\fa8c4d3a240022227b2de16873cd30c0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\Artifacts\ff\ff22d773cc7a2c83661b02fa43df2812
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\ff\ff22d773cc7a2c83661b02fa43df2812
+      projectPath: Library\Artifacts\ff\ff22d773cc7a2c83661b02fa43df2812
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\CurrentLayout-default.dwlt
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\CurrentMaximizeLayout.dwlt
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\CurrentMaximizeLayout.dwlt
+      projectPath: Library\CurrentMaximizeLayout.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\EditorInstance.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: friendshipGame\Library\LastSceneManagerSetup.txt
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\LastSceneManagerSetup.txt
+      projectPath: Library\LastSceneManagerSetup.txt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\SceneVisibilityState.asset
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SceneVisibilityState.asset
+      projectPath: Library\SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\SourceAssetDB
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      projectPath: Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      projectPath: Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\AssetImportWorker0-prev.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\AssetImportWorker0-prev.log
+      projectPath: Logs\AssetImportWorker0-prev.log
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\AssetImportWorker0.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\AssetImportWorker0.log
+      projectPath: Logs\AssetImportWorker0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-AssetImportWorker0.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-AssetImportWorker0.log
+      projectPath: Logs\shadercompiler-AssetImportWorker0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe10.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe11.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe2.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe3.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe4.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe5.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe6.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe7.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe8.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      projectPath: Logs\shadercompiler-UnityShaderCompiler.exe9.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 61343201255dd14e13ed6719261e837a6482a103
     mergeA: 
     mergeB: 

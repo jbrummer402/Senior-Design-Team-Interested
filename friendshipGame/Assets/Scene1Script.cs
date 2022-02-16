@@ -20,6 +20,7 @@ public class Scene1Script : MonoBehaviour
 
         public static Dialog CreateFromJSON(string jsonString) {
             Dialog d = JsonConvert.DeserializeObject<Dialog>(jsonString);
+            // Dialog d = new Dialog();
             d.fillPaths("1");
             return d;
         }

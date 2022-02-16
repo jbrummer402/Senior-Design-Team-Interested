@@ -1466,6 +1466,7 @@ GameObject:
   - component: {fileID: 325907211}
   - component: {fileID: 325907210}
   - component: {fileID: 325907209}
+  - component: {fileID: 325907212}
   m_Layer: 5
   m_Name: NewGameYesBtn
   m_TagString: Untagged
@@ -1549,6 +1550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 325907212}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TalkingSections
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &325907210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,6 +1600,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325907207}
   m_CullTransparentMesh: 1
+--- !u!114 &325907212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325907207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c2db90cca8dcc44a1b23f4fa828201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332349778
 GameObject:
   m_ObjectHideFlags: 0
