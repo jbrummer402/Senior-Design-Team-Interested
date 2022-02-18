@@ -45,8 +45,10 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
       var backpackCollider = Physics2D.OverlapArea(v[0], v[2]);
       Debug.Log("backpack collider: " + backpackCollider);
+      Debug.Log("backpack collider tag: " + backpackCollider.gameObject.name);
 
-      if (backpackCollider) {
+
+      if (backpackCollider && backpackCollider.gameObject.name == gameObject.name) {
         Debug.Log("Collision");
         Debug.Log("GameObject Name: " + gameObject.name);
         if (accepted.Contains(gameObject.name)) {
