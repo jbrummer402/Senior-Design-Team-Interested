@@ -393,6 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1516233073}
   Backpack: {fileID: 539323102}
+  ScoreScript: {fileID: 1792059121}
 --- !u!114 &618480326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1516233073}
   Backpack: {fileID: 539323102}
+  ScoreScript: {fileID: 1792059121}
 --- !u!61 &1392465597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -894,6 +896,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1792059120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792059122}
+  - component: {fileID: 1792059121}
+  m_Layer: 0
+  m_Name: ScoreScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1792059121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792059120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7496976cc9078464592646f25e7ee8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &1792059122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792059120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.053483, y: -7.9127283, z: -3672.252}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804755981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,3 +1057,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1516233073}
   Backpack: {fileID: 539323102}
+  ScoreScript: {fileID: 1792059121}

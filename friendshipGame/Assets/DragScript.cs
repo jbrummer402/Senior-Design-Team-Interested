@@ -8,13 +8,22 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 {
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject Backpack;
+    [SerializeField] ScoreScript ScoreScript;
 
     private RectTransform rectTransform;
     private RectTransform backpackRectTransform;
+    private Vector2 spawnPoint;
+    private List<string> accepted = new List<string>();
 
     private void Awake() {
       rectTransform = GetComponent<RectTransform>();
       backpackRectTransform = Backpack.GetComponent<RectTransform>();
+      accepted.Add("Textbooks");
+      accepted.Add("PencilCase");
+    }
+
+    private void Start() {
+      spawnPoint = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData) {
@@ -28,22 +37,25 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnEndDrag(PointerEventData eventData) {
       Debug.Log("OnEndDrag");
-      Debug.Log("Obj Max: " + rectTransform.offsetMax);
-      Debug.Log("Obj Min: " + rectTransform.offsetMin);
-      Debug.Log("Backpack Max: " + backpackRectTransform.offsetMax);
-      Debug.Log("Backpack Min: " + backpackRectTransform.offsetMin);
-      var backpackCollider = Physics2D.OverlapArea(backpackRectTransform.offsetMin, backpackRectTransform.offsetMax);
-      // var collider = Physics2D.OverlapArea(rectTransform.offsetMin, rectTransform.offsetMax);
-      // Debug.Log("backpack collider: " + backpackCollider);
-      // Debug.Log("collider: " + collider);
+      Vector3[] v = new Vector3[4];
+      backpackRectTransform.GetWorldCorners(v);
+
+      Debug.Log("Backpack Min1: " + v[0]);
+      Debug.Log("Backpack Max1: " + v[2]);
+
+      var backpackCollider = Physics2D.OverlapArea(v[0], v[2]);
+      Debug.Log("backpack collider: " + backpackCollider);
 
       if (backpackCollider) {
         Debug.Log("Collision");
+        Debug.Log("GameObject Name: " + gameObject.name);
+        if (accepted.Contains(gameObject.name)) {
+          ScoreScript.AddScore();
+          gameObject.SetActive(false);
+        } else {
+          rectTransform.anchoredPosition = spawnPoint;
+        }
       }
-
-      // if (Physics2D.IsTouching(collider, backpackCollider)) {
-      //   Debug.Log("Collided w/ Backpack");
-      // }
     }
 
     public void OnPointerDown(PointerEventData eventData) {

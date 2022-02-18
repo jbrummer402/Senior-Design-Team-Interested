@@ -13,19 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-02-16T15:59:36.748-05:00
-  initializedAtString: 2022-02-16T15:07:35.154-05:00
+  lastUpdatedAtString: 2022-02-18T14:41:40.316-05:00
+  initializedAtString: 2022-02-18T10:35:11.193-05:00
   localBranches:
   - name: elijah-dev
     tracking: origin/elijah-dev
   - name: main
     tracking: origin/main
+  - name: packing-dev
+    tracking: origin/packing-dev
   remoteBranches:
   - name: origin/elijah-dev
     tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/main
+    tracking: '[None]'
+  - name: origin/packing-dev
     tracking: '[None]'
   remotes:
   - name: origin
@@ -39,6 +43,7 @@ MonoBehaviour:
     keys:
     - elijah-dev
     - main
+    - packing-dev
     values:
     - name: elijah-dev
       remote:
@@ -50,6 +55,11 @@ MonoBehaviour:
         name: origin
         url: https://github.com/jbrummer402/Senior-Design-Team-Interested
       trackingBranch: main
+    - name: packing-dev
+      remote:
+        name: origin
+        url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+      trackingBranch: packing-dev
   remoteConfigBranches:
     keys:
     - origin
@@ -58,6 +68,7 @@ MonoBehaviour:
       - elijah-dev
       - HEAD
       - main
+      - packing-dev
     subKeyValues:
     - Values:
       - name: elijah-dev
@@ -71,6 +82,11 @@ MonoBehaviour:
           url: https://github.com/jbrummer402/Senior-Design-Team-Interested
         trackingBranch: 
       - name: main
+        remote:
+          name: origin
+          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+        trackingBranch: 
+      - name: packing-dev
         remote:
           name: origin
           url: https://github.com/jbrummer402/Senior-Design-Team-Interested
