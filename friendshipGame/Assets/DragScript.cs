@@ -44,9 +44,8 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
       Debug.Log("Backpack Max1: " + v[2]);
 
       var backpackCollider = Physics2D.OverlapArea(v[0], v[2]);
-      Debug.Log("backpack collider: " + backpackCollider);
-      Debug.Log("backpack collider tag: " + backpackCollider.gameObject.name);
 
+      GetComponent<Image>().color = new Color32(255,255,225,255);
 
       if (backpackCollider && backpackCollider.gameObject.name == gameObject.name) {
         Debug.Log("Collision");
