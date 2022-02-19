@@ -9,6 +9,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject Backpack;
     [SerializeField] ScoreScript ScoreScript;
+    [SerializeField] private GameObject badge;
 
     private RectTransform rectTransform;
     private RectTransform backpackRectTransform;
@@ -20,6 +21,8 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
       backpackRectTransform = Backpack.GetComponent<RectTransform>();
       accepted.Add("Textbooks");
       accepted.Add("PencilCase");
+      accepted.Add("Notebooks");
+      accepted.Add("Laptop");
     }
 
     private void Start() {
@@ -52,6 +55,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         Debug.Log("GameObject Name: " + gameObject.name);
         if (accepted.Contains(gameObject.name)) {
           ScoreScript.AddScore();
+          badge.GetComponent<Image>().color = new Color32(255,255,255,255);
           gameObject.SetActive(false);
         } else {
           rectTransform.anchoredPosition = spawnPoint;
