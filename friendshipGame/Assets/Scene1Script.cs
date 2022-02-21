@@ -24,6 +24,7 @@ public class Scene1Script : MonoBehaviour
             public string who;
             public string response;
             public IList<Option> options;
+            public string microgame;
         }
 
         public int scene;
@@ -57,15 +58,18 @@ public class Scene1Script : MonoBehaviour
     [SerializeField] private TMP_Text CharName = null;
     [SerializeField] private Image CharImage = null;
     private string FirstChar = "FirstChar";
-    private string Scene1Pos = "1";
+    private static string Scene1Pos = "Scene1Pos";
     private Queue<string> Sentences;
     private Dialog dialog;
+    private bool returnedFromMicrogame = false;
 
-    // Start is called before the first frame update
-    void Start() {
+
+	// Start is called before the first frame update
+	void Start() {
+        print("start");
         ///TODO load from a file
         string jsonDialog = @"{
-	        ""scene"": 1,
+	        ""microgame"": 1,
 	        ""entries"": {
 		        ""start"": {
 			        ""response"": ""Time to get dressed. What outfit would you like to wear?"",
@@ -108,7 +112,7 @@ public class Scene1Script : MonoBehaviour
 			        ]
 		        },
 		        ""packingGame"": {
-			        ""scene"": ""packingGame"",
+			        ""TODO"": ""packingGame"",
 			        ""response"": ""Good job packing! Are you ready to brush your teeth now?"",
 			        ""options"": [
 				        {
@@ -118,7 +122,7 @@ public class Scene1Script : MonoBehaviour
 			        ]
 		        },
 		        ""hygeineGame"": {
-			        ""scene"": ""hygeineGame"",
+			        ""microgame"": ""Scenes/Hygiene"",
 			        ""response"": ""You feel fresh and clean!\fYour destination is 30 minutes away. When should you leave to arrive on time by 11AM?"",
 			        ""options"": [
 				        {
@@ -151,9 +155,10 @@ public class Scene1Script : MonoBehaviour
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
 
-        PlayerPrefs.SetString(Scene1Pos, "start");
+        if(!PlayerPrefs.HasKey(Scene1Pos))
+            PlayerPrefs.SetString(Scene1Pos, "start");
 
-        queueDialog(dialog.GetEntry("start").response);
+        queueDialog(dialog.GetEntry(PlayerPrefs.GetString(Scene1Pos)).response);
 
         ContinueDialogue();
     }
@@ -241,11 +246,22 @@ public class Scene1Script : MonoBehaviour
         Dialog.Entry.Option option = entry.options[Pressed - 1];
         currentLocation = option.id;
 
+        entry = dialog.GetEntry(currentLocation);
+        if(entry == null)
+            return;
+        string scene = entry.microgame;
+        PlayerPrefs.SetString(Scene1Pos, currentLocation);
+
+        if(scene != null && !returnedFromMicrogame) {
+            returnedFromMicrogame = true;
+            enterMicrogame(scene);
+        }
+        returnedFromMicrogame = false;
         if(option.response != null) {
             queueDialog(option.response);
         }
 
-        PlayerPrefs.SetString(Scene1Pos, currentLocation);
+        
         if(dialog.HasEntry(currentLocation))
             queueDialog(dialog.GetEntry(currentLocation).response);
         ContinueDialogue();
@@ -258,7 +274,7 @@ public class Scene1Script : MonoBehaviour
     }
 
     void enterMicrogame(string gameScene) {
-        SceneManager.LoadScene(gameScene);
+        SceneManager.LoadSceneAsync(gameScene);
     }
 
     void incorrectAnswer(string reasoning) {

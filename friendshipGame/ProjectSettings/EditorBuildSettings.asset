@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hygiene.unity
+    guid: f23078b872ab6a645a8b737306a085c6
+  - enabled: 1
+    path: Assets/Scenes/TalkingSections.unity
+    guid: 041f074a6540cbe4c900aa4095506b5b
   m_configObjects: {}
