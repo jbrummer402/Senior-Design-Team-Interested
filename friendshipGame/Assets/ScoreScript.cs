@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ScoreScript : MonoBehaviour
 {
+    [SerializeField] private int numCorrectObjects;
+    [SerializeField] private GameObject endScreen;
+
     public int score;
 
     // Start is called before the first frame update
@@ -13,8 +16,8 @@ public class ScoreScript : MonoBehaviour
     }
 
     void Update() {
-        if (score==5) {
-          // win
+        if (score==numCorrectObjects) {
+          endScreen.SetActive(true);
         }        
     }
 
