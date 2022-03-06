@@ -261,7 +261,7 @@ public class Scene1Script : MonoBehaviour
             queueDialog(option.response);
         }
 
-        
+
         if(dialog.HasEntry(currentLocation))
             queueDialog(dialog.GetEntry(currentLocation).response);
         ContinueDialogue();
