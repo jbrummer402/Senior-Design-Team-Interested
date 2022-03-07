@@ -75,3 +75,5 @@ crashlytics-build.properties
 *.dll
 MonoBleedingEdge/
 .vsconfig
+
+/[Aa]ssets/Plugins/GitHub*
