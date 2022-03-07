@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2022-02-22T16:04:41.184-05:00
-  initializedAtString: 2022-02-22T16:04:41.184-05:00
+  lastUpdatedAtString: 2022-03-06T20:20:38.998-05:00
+  initializedAtString: 2022-03-06T18:38:47.836-05:00
   currentGitRemote:
     name: origin
-    url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+    url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: packing-dev
-    tracking: origin/packing-dev
+    name: main
+    tracking: origin/main
   currentConfigBranch:
-    name: packing-dev
+    name: main
     remote:
       name: origin
-      url: https://github.com/jbrummer402/Senior-Design-Team-Interested
-    trackingBranch: packing-dev
+      url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
+    trackingBranch: main
   currentConfigRemote:
     name: origin
-    url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+    url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
   currentHead: 

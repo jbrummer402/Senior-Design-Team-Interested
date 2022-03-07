@@ -57,6 +57,9 @@ public class Scene1Script : MonoBehaviour
     [SerializeField] private TMP_Text PromptText = null;
     [SerializeField] private TMP_Text CharName = null;
     [SerializeField] private Image CharImage = null;
+
+    [Header("Debug")]
+    [SerializeField] private bool resetDialogPos = false;
     private string FirstChar = "FirstChar";
     private static string Scene1Pos = "Scene1Pos";
     private Queue<string> Sentences;
@@ -112,7 +115,7 @@ public class Scene1Script : MonoBehaviour
 			        ]
 		        },
 		        ""packingGame"": {
-			        ""TODO"": ""packingGame"",
+			        ""microgame"": ""Scenes/Packing"",
 			        ""response"": ""Good job packing! Are you ready to brush your teeth now?"",
 			        ""options"": [
 				        {
@@ -155,7 +158,7 @@ public class Scene1Script : MonoBehaviour
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
 
-        if(!PlayerPrefs.HasKey(Scene1Pos))
+        if(!PlayerPrefs.HasKey(Scene1Pos) || resetDialogPos)
             PlayerPrefs.SetString(Scene1Pos, "start");
 
         queueDialog(dialog.GetEntry(PlayerPrefs.GetString(Scene1Pos)).response);

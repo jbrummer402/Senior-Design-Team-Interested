@@ -13,27 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-02-22T16:04:41.656-05:00
-  initializedAtString: 2022-02-22T16:04:41.337-05:00
+  lastUpdatedAtString: 2022-03-06T20:20:40.071-05:00
+  initializedAtString: 2022-03-06T18:56:25.147-05:00
   localBranches:
-  - name: elijah-dev
-    tracking: origin/elijah-dev
   - name: main
     tracking: origin/main
   - name: packing-dev
     tracking: origin/packing-dev
   remoteBranches:
-  - name: origin/elijah-dev
-    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/main
     tracking: '[None]'
-  - name: origin/packing-dev
-    tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+    url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
     login: 
     user: 
     host: 
@@ -41,59 +35,41 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - elijah-dev
     - main
     - packing-dev
     values:
-    - name: elijah-dev
-      remote:
-        name: origin
-        url: https://github.com/jbrummer402/Senior-Design-Team-Interested
-      trackingBranch: elijah-dev
     - name: main
       remote:
         name: origin
-        url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+        url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
       trackingBranch: main
     - name: packing-dev
       remote:
         name: origin
-        url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+        url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
       trackingBranch: packing-dev
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - elijah-dev
       - HEAD
       - main
-      - packing-dev
     subKeyValues:
     - Values:
-      - name: elijah-dev
-        remote:
-          name: origin
-          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
-        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
-          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+          url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
         trackingBranch: 
       - name: main
         remote:
           name: origin
-          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
-        trackingBranch: 
-      - name: packing-dev
-        remote:
-          name: origin
-          url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+          url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/jbrummer402/Senior-Design-Team-Interested
+      url: https://github.com/jbrummer402/Senior-Design-Team-Interested.git

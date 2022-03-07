@@ -5962,6 +5962,7 @@ MonoBehaviour:
   PromptText: {fileID: 1549230199}
   CharName: {fileID: 76725730}
   CharImage: {fileID: 1427881494}
+  resetDialogPos: 0
 --- !u!4 &1894417627
 Transform:
   m_ObjectHideFlags: 0

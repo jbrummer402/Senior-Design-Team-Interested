@@ -13,144 +13,402 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-02-22T16:06:07.342-05:00
-  initializedAtString: 2022-02-22T16:04:41.486-05:00
+  lastUpdatedAtString: 2022-03-06T20:35:51.838-05:00
+  initializedAtString: 2022-03-06T18:38:48.599-05:00
   entries:
+  - path: friendshipGame\Assets\Scene1Script.cs
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Assets\Scene1Script.cs
+    projectPath: Assets\Scene1Script.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: friendshipGame\Assets\Scenes\Packing.unity
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\Packing.unity
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\Packing.unity
     projectPath: Assets\Scenes\Packing.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: friendshipGame\Assets\ScoreScript.cs
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Assets\ScoreScript.cs
-    projectPath: Assets\ScoreScript.cs
+  - path: friendshipGame\Assets\Scenes\TalkingSections.unity
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Assets\Scenes\TalkingSections.unity
+    projectPath: Assets\Scenes\TalkingSections.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: friendshipGame\Library\ArtifactDB
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ArtifactDB
-    projectPath: Library\ArtifactDB
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: friendshipGame\Library\Artifacts\0f\0f249b4362bdac600ca85f079c12b84b
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\0f\0f249b4362bdac600ca85f079c12b84b
-    projectPath: Library\Artifacts\0f\0f249b4362bdac600ca85f079c12b84b
+  - path: friendshipGame\Library\Artifacts\75\75586ce86c34f2ec537b7f9cc58d69f5
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\75\75586ce86c34f2ec537b7f9cc58d69f5
+    projectPath: Library\Artifacts\75\75586ce86c34f2ec537b7f9cc58d69f5
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: friendshipGame\Library\Artifacts\32\3277757286f06e4a4c65478ca500233a
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\32\3277757286f06e4a4c65478ca500233a
-    projectPath: Library\Artifacts\32\3277757286f06e4a4c65478ca500233a
+  - path: friendshipGame\Library\Artifacts\b5\b556bd902858aba63e266b1be1f249ea
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\b5\b556bd902858aba63e266b1be1f249ea
+    projectPath: Library\Artifacts\b5\b556bd902858aba63e266b1be1f249ea
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: friendshipGame\Library\Artifacts\74\749928be6b09fdf9344aac146ca5901d
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\74\749928be6b09fdf9344aac146ca5901d
-    projectPath: Library\Artifacts\74\749928be6b09fdf9344aac146ca5901d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: friendshipGame\Library\Artifacts\a3\a35981875e6fcfbea56c06aa5d21f4ad
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\Artifacts\a3\a35981875e6fcfbea56c06aa5d21f4ad
-    projectPath: Library\Artifacts\a3\a35981875e6fcfbea56c06aa5d21f4ad
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: friendshipGame\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: friendshipGame\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\EditorInstance.json
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\EditorInstance.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: friendshipGame\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: friendshipGame\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\CHANGELOG.md.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\LICENSE.md.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\package.json.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.deps.json.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.dll.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.dll.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.pdb.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.pdb.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.pdb.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      AOT\Newtonsoft.Json.xml.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.deps.json.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.dll.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.dll.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.dll.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.pdb.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.pdb.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.pdb.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\Plugins\Newtonsoft.Json
+      Editor\Newtonsoft.Json.xml.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md.meta
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md.meta
+    projectPath: Library\PackageCache\jillejr.newtonsoft.json-for-unity@13.0.102\README.md.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageManager\ProjectCache
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageManager\ProjectCache
+    projectPath: Library\PackageManager\ProjectCache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Library\PackageManager\ProjectCache.md5
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\PackageManager\ProjectCache.md5
+    projectPath: Library\PackageManager\ProjectCache.md5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: friendshipGame\Library\SceneVisibilityState.asset
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: friendshipGame\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: friendshipGame\Library\SourceAssetDB
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\SourceAssetDB
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
     projectPath: Library\StateCache\MainStageHierarchy\8f\8fd65426490f636435c901d65ce7ed24.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
     projectPath: Library\StateCache\SceneView\8b\8b0d1387a24a688f32df764794220fab.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: friendshipGame\Logs\AssetImportWorker0-prev.log
-    fullPath: C:\Users\elijah\Senior-Design-Team-Interested\friendshipGame\Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\AssetImportWorker0-prev.log
     projectPath: Logs\AssetImportWorker0-prev.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe10.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe10.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe11.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe11.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe2.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe3.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe3.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe4.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe4.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe5.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe5.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe6.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe6.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe7.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe7.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe8.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe8.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\Logs\shadercompiler-UnityShaderCompiler.exe9.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe9.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: friendshipGame\ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: friendshipGame\ProjectSettings\TimelineSettings.asset
+    fullPath: C:\Users\Matt\Documents\School\CS424\Senior-Design-Team-Interested\friendshipGame\ProjectSettings\TimelineSettings.asset
+    projectPath: ProjectSettings\TimelineSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
