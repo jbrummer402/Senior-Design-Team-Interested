@@ -1,0 +1,325 @@
+//Implementation TODO
+/*
+  calendar
+  item selection
+  more than 3 buttons
+  character in options
+  dont error at end
+*/
+
+
+{
+  "scene": 3,
+  "entries": {
+    "start": {
+      "response": "You are seated in the pizzeria and waiting on your food. What do you say to Sam?",
+      "character":  "",
+      "options": [
+        {
+          "id": "waitingconversation",
+          "title": "How has your week been, Sam?"
+        },
+        {
+          "id": "start",
+          "title": "Would they hurry up already? I'm hungry!",
+          "response": "It's important to be kind- not just to Sam, but everyone! That includes the waitstaff"
+        },
+        {
+          "id": "excitedtoeat",
+          "title": "I'm super excited to eat lunch/dinner!",
+          "response": "Good observation! Consider finding a way to let Sam into the comversation"
+        }
+      ]
+    },
+    "excitedtoeat": {
+      "response": "Me too!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "whatfood",
+          "title": "Okay!"
+        }
+      ]
+    },
+    "waitingconversation": {
+      "response": "My week has been really great!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "whatfood",
+          "title": "Okay!"
+        }
+      ]
+    },
+    "whatfood": {
+      "response": "Thank you for taking me here. What pizza do you think looks yummy?",
+      "character": "Sam",
+      "var": "whatfood",
+      "options": [
+        {
+          "id": "whatfood",
+          "title": "Ew; This is all gross!",
+          "response": "Try to be more positive"
+        },
+        {
+          "id": "choseza",
+          "title": "Pepperoni",
+          "val": "pepperoni"
+        },
+        {
+          "id": "choseza",
+          "title": "Plain",
+          "val": "plain"
+        },
+        {
+          "id": "choseza",
+          "title": "Hawaiian",
+          "val": "hawaiian"
+        }
+      ]
+    },
+    "choseza": {
+      "response": "That's my favorite pizza!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "waiterarrives",
+          "title": "Let's split one"
+        },
+        {
+          "id": "waiterarrives",
+          "title": "Nice!",
+          "response": "Asking Sam if they want to split a pizza with you would be polite."
+        }
+      ]
+    },
+    "waiterarrives": {
+      "response": "(The waiter arrives to your table)\fThank you two for dining with us today, my name is Julian! Might I get you started with a drink?",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "waitergetsdrinks",
+          "title": "I'd like a water, please",
+          "character": "Sam",
+          "response": "And I'll have just have a water, please."
+        },
+        {
+          "id": "waitergetsdrinks",
+          "title": "I'd like a soda, please",
+          "character": "Sam",
+          "response": "And I'll have just have a water, please."
+        },
+        {
+          "id": "waiterarrives",
+          "title": "About time!",
+          "response": "Be kind. They were probably busy- it's important to remain empathetic."
+        },
+        {
+          "id": "waiterarrives",
+          "title": "No, thanks",
+          "response": "You might get thirsty. Best to get something to drink."
+        }
+      ]
+    },
+    "waitergetsdrinks": {
+      "response": "I'll be right back with your drinks",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "goodconversationtopic1",
+          "title": "Apparently this pizzeria has a good reputation."
+        },
+        {
+          "id": "goodconversationtopic2",
+          "title": "Did you hear that the owner is 90 years old?"
+        },
+        {
+          "id": "waitergetsdrinks",
+          "title": "How do you feel about the war going on?",
+          "response": "That isn't a great conversation topic. Something more casual is better suited to lunchtime chat with Sam, who you don't know well yet."
+        }
+      ]
+    },
+    "goodconversationtopic1": {
+      "response": "I heard from my friend that their brick oven pizzas are the best!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "samtotherestroom",
+          "title": "I'm looking forward to trying them."
+        },
+        {
+          "id": "goodconversationtopic1",
+          "title": "If they're using brick ovens then why is it taking so long?",
+          "response": "It's important to be positive when in a casual conversation."
+        }
+      ]
+    },
+    "goodconversationtopic2": {
+      "response": "And they're still running the place? That's insane.",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "samtotherestroom",
+          "title": "The owner must love his business.",
+          "response": "Good thinking. It's important to give positive comments to lighten the mood."
+        },
+        {
+          "id": "goodconversationtopic2",
+          "title": "The owner should just retire already.",
+          "response": "It's important not to talk about controversial things in a casual conversation."
+        }
+      ]
+    },
+    "samtotherestroom": {
+      "response": "I'm gonna head to the restroom. If the waiter comes by while I'm gone, can you order for me?",
+      "options": [
+        {
+          "id": "waitertakesorder",
+          "title": "Sure!"
+        },
+        {
+          "id": "samtotherestroom",
+          "title": "No",
+          "response": "Agreeing to order Sam's food is the polite thing to do, especially since you are splitting a pizza."
+        }
+      ]
+    },
+    "waitertakesorder": {
+      "response": "Are you ready to order?",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "waitertakesorder",
+          "title": "Let's wait until Sam comes back.",
+          "response": "Sam asked you to order."
+        },
+        {
+          "id": "waitertakesorder",
+          "title": "I don't know what I want.",
+          "response": "You might not know what you want, but you should still order for Sam!"
+        },
+        {
+          "id": "waitertookorder",
+          "title": "Yes! I'll have a medium [whatfood] pie."
+        },
+        {
+          "id": "waitertakesorder",
+          "title": "Yes! I'll have two slices of [whatfood].",
+          "response": "You and Sam agreed to split a pizza, you should order enough for both of you."
+        }
+      ]
+    },
+    "waitertookorder": {
+      "response": "It'll be ready in a couple of minutes. Could I take your menus?",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "waitertookorder",
+          "title": "I don't think so.",
+          "response": "You have to return the menu after ordering."
+        },
+        {
+          "id": "samarrives",
+          "title": "Sure."
+        }
+      ]
+    },
+    "samarrives": {
+      "response": "(Sam comes back from the restroom)",
+      "character": "",
+      "options": [
+        {
+          "id": "samarrives",
+          "title": "How was the bathroom?",
+          "response": "This question isn't very appropriate."
+        },
+        {
+          "id": "starved",
+          "title": "I ordered while you were gone."
+        }
+      ]
+    },
+    "starved": {
+      "response": "Great! I'm starving!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "starved",
+          "title": "They take so long to get the food ready here.",
+          "response": "Try to be more positive."
+        },
+        {
+          "id": "pizzaarrives",
+          "title": "*Say nothing*"
+        },
+        {
+          "id": "pizzaarrives",
+          "title": "Me too!"
+        }
+      ]
+    },
+    "pizzaarrives": {
+      "response": "Here's your pizza. Enjoy!",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "eatfood",
+          "title": "It looks great!"
+        },
+        {
+          "id": "pizzaarrives",
+          "title": "Took long enough!",
+          "response": "Try to be more positive."
+        }
+      ]
+    },
+    "eatfood": {
+      "response": "Here's your pizza. Enjoy!",
+      "character": "Julian",
+      "options": [
+        {
+          "id": "foodeaten",
+          "title": "*Begin Eating*"
+        }
+      ]
+    },
+    "foodeaten": {
+      "response": "That was great!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "enddate",
+          "title": "It was!"
+        },
+        {
+          "id": "foodeaten",
+          "title": "I hated it.",
+          "response": "Try to be more positive."
+        },
+        {
+          "id": "enddate",
+          "title": "It was okay."
+        }
+      ]
+    },
+    "enddate": {
+      "response": "I had a great time! We should do this again sometime.",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "end",
+          "title": "We really should!"
+        },
+        {
+          "id": "end",
+          "title": "It was enjoyable",
+          "response": "Try to be less weird."
+        }
+      ]
+    },
+    "end": {
+      "response": ""
+    }
+  }
+}

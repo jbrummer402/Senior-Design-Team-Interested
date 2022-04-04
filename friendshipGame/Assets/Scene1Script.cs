@@ -4,59 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using Newtonsoft.Json;
-using System;
+using System.Text.RegularExpressions;
 
 public class Scene1Script : MonoBehaviour
 {
-
-    public class Dialog
-    {
-        public class Entry
-        {
-            public class Option
-            {
-                public string id;
-                public string title;
-                public string response;
-            }
-
-            public string who;
-            public string response;
-            public IList<Option> options;
-            public string microgame;
-        }
-
-        public int scene;
-        public IDictionary<string, Entry> entries;
-
-        public static Dialog CreateFromJSON(string jsonString) {
-            return JsonConvert.DeserializeObject<Dialog>(jsonString);
-        }
-
-        public Boolean HasEntry(string id) {
-            return entries.ContainsKey(id);
-        }
-
-        public Entry GetEntry(string id) {
-            if(!HasEntry(id))
-                return null;
-            return entries[id];
-        }
-
-    }
-
     [Header("Scene Objects")]
     [SerializeField] private TMP_Text Response1Text = null;
     [SerializeField] private TMP_Text Response2Text = null;
     [SerializeField] private TMP_Text Response3Text = null;
+    [SerializeField] private TMP_Text Response4Text = null;
     [SerializeField] private Button ContinueBtn = null;
     [SerializeField] private Button Response1Btn = null;
     [SerializeField] private Button Response2Btn = null;
     [SerializeField] private Button Response3Btn = null;
+    [SerializeField] private Button Response4Btn = null;
     [SerializeField] private TMP_Text PromptText = null;
     [SerializeField] private TMP_Text CharName = null;
     [SerializeField] private Image CharImage = null;
+    [SerializeField] private string DialogLocation = null;
+    [SerializeField] private TMP_InputField TextInputField = null;
+    [SerializeField] private Button SubmitTextBtn = null;
 
     [Header("Debug")]
     [SerializeField] private bool resetDialogPos = false;
@@ -64,92 +31,22 @@ public class Scene1Script : MonoBehaviour
     private static string Scene1Pos = "Scene1Pos";
     private Queue<string> Sentences;
     private Dialog dialog;
-    private bool returnedFromMicrogame = false;
+    // private Dictionary<string, string> vars;
 
 
-	// Start is called before the first frame update
-	void Start() {
+    // Start is called before the first frame update
+    void Start() {
         print("start");
         ///TODO load from a file
-        string jsonDialog = @"{
-	        ""microgame"": 1,
-	        ""entries"": {
-		        ""start"": {
-			        ""response"": ""Time to get dressed. What outfit would you like to wear?"",
-			        ""options"": [
-				        {
-					        ""id"": ""start"",
-					        ""title"": ""Tuxedo and a suit"",
-					        ""response"": ""That seems a bit much for the occasion. A more casual outfit would be better suited.""
-				        },
-				        {
-					        ""id"": ""breakfast"",
-					        ""title"": ""Jeans/khakis and a polo/button-up shirt""
-				        },
-				        {
-					        ""id"": ""breakfast"",
-					        ""title"": ""Shorts and a t-shirt"",
-					        ""response"": ""It may be a better idea to be slightly better dressed for the occasion.""
-				        }
-			        ]
-		        },
-		        ""breakfast"": {
-			        ""response"": ""It's time for breakfast. What do you want to eat?"",
-			        ""options"": [
-				        {
-					        ""id"": ""packingGame"",
-					        ""title"": ""Fruit"",
-					        ""image"": ""apple"",
-					        ""response"": ""That is a good and healthy choice. You feel ready to take on the day!""
-				        },
-				        {
-					        ""id"": ""packingGame"",
-					        ""title"": ""Toast"",
-					        ""response"": ""That wasn't a bad choice, but the apple would have been a healthier option.""
-				        },
-				        {
-					        ""id"": ""breakfast"",
-					        ""title"": ""Candy bar"",
-					        ""response"": ""A healthier choice would be a better way to start your day.""
-				        }
-			        ]
-		        },
-		        ""packingGame"": {
-			        ""microgame"": ""Scenes/Packing"",
-			        ""response"": ""Good job packing! Are you ready to brush your teeth now?"",
-			        ""options"": [
-				        {
-					        ""id"": ""hygeineGame"",
-					        ""title"": ""Yes!""
-				        }
-			        ]
-		        },
-		        ""hygeineGame"": {
-			        ""microgame"": ""Scenes/Hygiene"",
-			        ""response"": ""You feel fresh and clean!\fYour destination is 30 minutes away. When should you leave to arrive on time by 11AM?"",
-			        ""options"": [
-				        {
-					        ""id"": ""end"",
-					        ""title"": ""10:20"",
-					        ""response"": ""You get there 10 minutes before everyone. You can leave a bit later and still arrive on time in the future.""
-				        },
-				        {
-					        ""id"": ""end"",
-                            ""title"": ""10:30"",
-					        ""response"": ""You show up on time and begin studying.""
-				        },
-				        {
-					        ""id"": ""end"",
-                            ""title"": ""10:40"",
-					        ""response"": ""You get there 10 minutes after everyone. It may be better to leave slightly earlier next time.""
-				        }
-			        ]
-		        }
-	        }
-        }";
+        //string jsonDialog = @"";
         //rootDialog = Dialog.CreateFromJSON(jsonDialog);
 
-        dialog = Dialog.CreateFromJSON(jsonDialog);
+        //vars = new Dictionary<string, string>();
+        //PlayerPrefs.set
+
+        //dialog = Dialog.CreateFromFile(DialogLocation);
+        dialog = Dialog.CreateFromFile("3");
+
 
         //CharName.text = rootDialog.who;
         Sentences = new Queue<string>();
@@ -157,31 +54,65 @@ public class Scene1Script : MonoBehaviour
         Response1Btn.gameObject.SetActive(false);
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
+        Response4Btn.gameObject.SetActive(false);
+
+        print(dialog.GetEntry("start").response);
+        print(PlayerPrefs.GetString(Scene1Pos));
 
         if(!PlayerPrefs.HasKey(Scene1Pos) || resetDialogPos)
             PlayerPrefs.SetString(Scene1Pos, "start");
 
+        CharName.text = null;
+
         queueDialog(dialog.GetEntry(PlayerPrefs.GetString(Scene1Pos)).response);
 
         ContinueDialogue();
+        //ShowDialog(dialog.GetEntry("start").response);
+        //DisplayButtons();
+    }
+
+    public void SubmitText() {
+        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
+        Dialog.Entry e = dialog.GetEntry(currentLocation);
+        print(e.input.id);
+        //vars.Add(e.input.var, TextInputField.text);
+        PlayerPrefs.SetString(e.input.var, TextInputField.text);
+        //vars.Add()
+        TextInputField.text = "";
+        TextInputField.gameObject.SetActive(false);
+        SubmitTextBtn.gameObject.SetActive(false);
+        PlayerPrefs.SetString(Scene1Pos, e.input.id);
+        DisplayButtons();
     }
 
     public void ContinueDialogue() {
+        print("ContinueDialogue");
+
+        Response1Btn.gameObject.SetActive(false);
+        Response2Btn.gameObject.SetActive(false);
+        Response3Btn.gameObject.SetActive(false);
+        Response4Btn.gameObject.SetActive(false);
         ContinueBtn.gameObject.SetActive(true);
         string currentLocation = PlayerPrefs.GetString(Scene1Pos);
         string sentence = Sentences.Dequeue();
+        Dialog.Entry entry = dialog.GetEntry(currentLocation);
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
         if(Sentences.Count == 0) {
             ContinueBtn.gameObject.SetActive(false);
-            DisplayButtons();
+            if(entry.input != null) {
+                ContinueBtn.gameObject.SetActive(false);
+                TextInputField.gameObject.SetActive(true);
+                SubmitTextBtn.gameObject.SetActive(true);
+            }
+            else {
+                DisplayButtons();
+            }
+            //
             return;
         }
-
-
-
     }
 
     IEnumerator TypeSentence(string sentence) {
@@ -195,9 +126,12 @@ public class Scene1Script : MonoBehaviour
     }
 
     void DisplayButtons() {
+        print("DisplayButtons");
+
         Response1Btn.gameObject.SetActive(false);
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
+        Response4Btn.gameObject.SetActive(false);
 
         string currentLocation = PlayerPrefs.GetString(Scene1Pos);
 
@@ -209,7 +143,7 @@ public class Scene1Script : MonoBehaviour
         ///TODO Support more than 3 buttons
         List<string> buttonTitles = new List<string>();
         foreach(Dialog.Entry.Option r in e.options) {
-            buttonTitles.Add(r.title);
+            buttonTitles.Add(fillVars(r.title));
         }
 
         if(buttonTitles.Count > 0) {
@@ -225,6 +159,10 @@ public class Scene1Script : MonoBehaviour
             Response3Btn.gameObject.SetActive(true);
             Response3Text.text = buttonTitles[2];
         }
+        if(buttonTitles.Count > 3) {
+            Response4Btn.gameObject.SetActive(true);
+            Response4Text.text = buttonTitles[3];
+        }
     }
 
     public void ClickOne() {
@@ -239,6 +177,10 @@ public class Scene1Script : MonoBehaviour
         ClickHandler(3);
     }
 
+    public void ClickFour() {
+        ClickHandler(4);
+    }
+
     void ClickHandler(int Pressed) {
         string currentLocation = PlayerPrefs.GetString(Scene1Pos);
         Response1Btn.gameObject.SetActive(false);
@@ -247,32 +189,52 @@ public class Scene1Script : MonoBehaviour
 
         Dialog.Entry entry = dialog.GetEntry(currentLocation);
         Dialog.Entry.Option option = entry.options[Pressed - 1];
+
+        if(entry.var != null && option.val != null) {
+            PlayerPrefs.SetString(entry.var, option.val);
+        }
+
         currentLocation = option.id;
+        PlayerPrefs.SetString(Scene1Pos, currentLocation);
 
         entry = dialog.GetEntry(currentLocation);
         if(entry == null)
             return;
-        string scene = entry.microgame;
-        PlayerPrefs.SetString(Scene1Pos, currentLocation);
 
-        if(scene != null && !returnedFromMicrogame) {
-            returnedFromMicrogame = true;
-            enterMicrogame(scene);
+        if(entry.character != null) {
+            CharName.text = entry.character;
         }
-        returnedFromMicrogame = false;
+        
         if(option.response != null) {
             queueDialog(option.response);
         }
 
-
-        if(dialog.HasEntry(currentLocation))
-            queueDialog(dialog.GetEntry(currentLocation).response);
+        queueDialog(dialog.GetEntry(currentLocation).response);
         ContinueDialogue();
+
+        string microgame = dialog.GetEntry(currentLocation).microgame;
+        if(microgame != null) {
+            enterMicrogame(microgame);
+        }
+
+
+    }
+
+
+    string fillVars(string text) { // Replaces all text in brackets with the corresponding variable from PlayerPrefs
+        Regex regex = new Regex(@"\[([A-Za-z]+)\]");
+
+        foreach(Match match in regex.Matches(text)) {
+            string varName = match.Value.Trim('[').Trim(']');
+            text = text.Replace(match.Value, PlayerPrefs.GetString(varName));
+        }
+        return text;
     }
 
     void queueDialog(string text) {
+        print(text);
         foreach(string sentence in text.Split('\f')) {
-            Sentences.Enqueue(sentence);
+            Sentences.Enqueue(fillVars(sentence));
         }
     }
 

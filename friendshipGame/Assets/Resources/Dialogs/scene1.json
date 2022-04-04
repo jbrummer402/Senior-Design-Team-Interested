@@ -1,0 +1,86 @@
+{
+  "scene": 1,
+  "entries": {
+    "start": {
+      "response": "Time to get dressed. What outfit would you like to wear?",
+      "options": [
+        {
+          "id": "start",
+          "title": "Tuxedo and a suit",
+          "response": "That seems a bit much for the occasion. A more casual outfit would be better suited."
+        },
+        {
+          "id": "breakfast",
+          "title": "Jeans/khakis and a polo/button-up shirt",
+          "response": "That is a good choice which balances looks and comfort."
+        },
+        {
+          "id": "breakfast",
+          "title": "Shorts and a t-shirt",
+          "response": "It may be a better idea to be slightly better dressed for the occasion."
+        }
+      ]
+    },
+    "breakfast": {
+      "response": "It's time for breakfast. What do you want to eat?",
+      "options": [
+        {
+          "id": "prePackingGame",
+          "title": "Fruit",
+          "image": "apple",
+          "response": "That is a good and healthy choice. You feel ready to take on the day!"
+        },
+        {
+          "id": "prePackingGame",
+          "title": "Toast",
+          "response": "That wasn't a bad choice, but the apple would have been a healthier option."
+        },
+        {
+          "id": "breakfast",
+          "title": "Candy bar",
+          "response": "A healthier choice would be a better way to start your day."
+        }
+      ]
+    },
+    "prePackingGame": {
+      "response": "Time to pack. Are you ready?",
+      "options": [
+        {
+          "id": "packingGame",
+          "title": "Yes"
+        }
+      ]
+    },
+    "packingGame": {
+      "microgame": "Scenes/Packing",
+      "response": "Good job packing! Are you ready to brush your teeth now?",
+      "options": [
+        {
+          "id": "hygeineGame",
+          "title": "Yes!"
+        }
+      ]
+    },
+    "hygeineGame": {
+      "microgame": "Scenes/Hygiene",
+      "response": "You feel fresh and clean!\fYour destination is 30 minutes away. When should you leave to arrive on time by 11AM?",
+      "options": [
+        {
+          "id": "end",
+          "title": "10:20",
+          "response": "You get there 10 minutes before everyone. You can leave a bit later and still arrive on time in the future."
+        },
+        {
+          "id": "end",
+          "title": "10:30",
+          "response": "You show up on time and begin studying."
+        },
+        {
+          "id": "end",
+          "title": "10:40",
+          "response": "You get there 10 minutes after everyone. It may be better to leave slightly earlier next time."
+        }
+      ]
+    }
+  }
+}
