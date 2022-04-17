@@ -309,7 +309,8 @@
       "options": [
         {
           "id": "end",
-          "title": "We really should!"
+          "title": "We really should!",
+          "scene": "2"
         },
         {
           "id": "end",

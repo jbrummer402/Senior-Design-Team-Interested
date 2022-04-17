@@ -13,6 +13,7 @@ public class Dialog
             public string response;
             public string character;
             public string val;
+            public string scene;
         }
         public class Input
         {

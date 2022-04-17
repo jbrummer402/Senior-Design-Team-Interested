@@ -67,16 +67,19 @@
       "options": [
         {
           "id": "end",
+          "scene": "2",
           "title": "10:20",
           "response": "You get there 10 minutes before everyone. You can leave a bit later and still arrive on time in the future."
         },
         {
           "id": "end",
+          "scene": "2",
           "title": "10:30",
           "response": "You show up on time and begin studying."
         },
         {
           "id": "end",
+          "scene": "2",
           "title": "10:40",
           "response": "You get there 10 minutes after everyone. It may be better to leave slightly earlier next time."
         }

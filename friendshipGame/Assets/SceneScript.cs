@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Text.RegularExpressions;
 
-public class Scene1Script : MonoBehaviour
+public class SceneScript : MonoBehaviour
 {
     [Header("Scene Objects")]
     [SerializeField] private TMP_Text Response1Text = null;
@@ -28,27 +28,17 @@ public class Scene1Script : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool resetDialogPos = false;
     private string FirstChar = "FirstChar";
-    private static string Scene1Pos = "Scene1Pos";
-    private Queue<string> Sentences;
+	private static string ScenePos = "ScenePos";
+    private static string CurScene = "CurScene";
+	private Queue<string> Sentences;
     private Dialog dialog;
-    // private Dictionary<string, string> vars;
 
 
     // Start is called before the first frame update
     void Start() {
         print("start");
-        ///TODO load from a file
-        //string jsonDialog = @"";
-        //rootDialog = Dialog.CreateFromJSON(jsonDialog);
+        
 
-        //vars = new Dictionary<string, string>();
-        //PlayerPrefs.set
-
-        //dialog = Dialog.CreateFromFile(DialogLocation);
-        dialog = Dialog.CreateFromFile("3");
-
-
-        //CharName.text = rootDialog.who;
         Sentences = new Queue<string>();
 
         Response1Btn.gameObject.SetActive(false);
@@ -56,23 +46,25 @@ public class Scene1Script : MonoBehaviour
         Response3Btn.gameObject.SetActive(false);
         Response4Btn.gameObject.SetActive(false);
 
-        print(dialog.GetEntry("start").response);
-        print(PlayerPrefs.GetString(Scene1Pos));
+        if(!PlayerPrefs.HasKey(CurScene)) {
+            PlayerPrefs.SetString(CurScene, "1");
+        }
 
-        if(!PlayerPrefs.HasKey(Scene1Pos) || resetDialogPos)
-            PlayerPrefs.SetString(Scene1Pos, "start");
+        dialog = Dialog.CreateFromFile(PlayerPrefs.GetString(CurScene));
+
+        if(!PlayerPrefs.HasKey(ScenePos) || resetDialogPos) {
+            PlayerPrefs.SetString(ScenePos, "start");
+        }
 
         CharName.text = null;
 
-        queueDialog(dialog.GetEntry(PlayerPrefs.GetString(Scene1Pos)).response);
+        queueDialog(dialog.GetEntry(PlayerPrefs.GetString(ScenePos)).response);
 
         ContinueDialogue();
-        //ShowDialog(dialog.GetEntry("start").response);
-        //DisplayButtons();
     }
 
     public void SubmitText() {
-        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
+        string currentLocation = PlayerPrefs.GetString(ScenePos);
         Dialog.Entry e = dialog.GetEntry(currentLocation);
         print(e.input.id);
         //vars.Add(e.input.var, TextInputField.text);
@@ -81,7 +73,7 @@ public class Scene1Script : MonoBehaviour
         TextInputField.text = "";
         TextInputField.gameObject.SetActive(false);
         SubmitTextBtn.gameObject.SetActive(false);
-        PlayerPrefs.SetString(Scene1Pos, e.input.id);
+        PlayerPrefs.SetString(ScenePos, e.input.id);
         DisplayButtons();
     }
 
@@ -93,9 +85,13 @@ public class Scene1Script : MonoBehaviour
         Response3Btn.gameObject.SetActive(false);
         Response4Btn.gameObject.SetActive(false);
         ContinueBtn.gameObject.SetActive(true);
-        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
+        string currentLocation = PlayerPrefs.GetString(ScenePos);
         string sentence = Sentences.Dequeue();
         Dialog.Entry entry = dialog.GetEntry(currentLocation);
+
+        if(entry.character != null) {
+            CharName.text = entry.character;
+        }
 
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -133,7 +129,7 @@ public class Scene1Script : MonoBehaviour
         Response3Btn.gameObject.SetActive(false);
         Response4Btn.gameObject.SetActive(false);
 
-        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
+        string currentLocation = PlayerPrefs.GetString(ScenePos);
 
 
         Dialog.Entry e = dialog.GetEntry(currentLocation);
@@ -182,7 +178,7 @@ public class Scene1Script : MonoBehaviour
     }
 
     void ClickHandler(int Pressed) {
-        string currentLocation = PlayerPrefs.GetString(Scene1Pos);
+        string currentLocation = PlayerPrefs.GetString(ScenePos);
         Response1Btn.gameObject.SetActive(false);
         Response2Btn.gameObject.SetActive(false);
         Response3Btn.gameObject.SetActive(false);
@@ -195,19 +191,28 @@ public class Scene1Script : MonoBehaviour
         }
 
         currentLocation = option.id;
-        PlayerPrefs.SetString(Scene1Pos, currentLocation);
+        PlayerPrefs.SetString(ScenePos, currentLocation);
+
+        if(option.character != null) {
+            CharName.text = option.character;
+        }
+
+        if(option.response != null) {
+            queueDialog(option.response);
+        }
+
+        if(option.id == "end" && option.scene != null) {
+            print("end");
+            PlayerPrefs.SetString(CurScene, option.scene);
+            PlayerPrefs.DeleteKey(ScenePos);
+            Scene scene = SceneManager.GetActiveScene();
+            print(scene.name);
+            SceneManager.LoadScene(scene.name);
+        }
 
         entry = dialog.GetEntry(currentLocation);
         if(entry == null)
             return;
-
-        if(entry.character != null) {
-            CharName.text = entry.character;
-        }
-        
-        if(option.response != null) {
-            queueDialog(option.response);
-        }
 
         queueDialog(dialog.GetEntry(currentLocation).response);
         ContinueDialogue();
@@ -216,8 +221,6 @@ public class Scene1Script : MonoBehaviour
         if(microgame != null) {
             enterMicrogame(microgame);
         }
-
-
     }
 
 
@@ -242,7 +245,7 @@ public class Scene1Script : MonoBehaviour
         SceneManager.LoadSceneAsync(gameScene);
     }
 
-    void incorrectAnswer(string reasoning) {
+    void incorrectAnswer(string reasoning) { 
 
     }
 }
