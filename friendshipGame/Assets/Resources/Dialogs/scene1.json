@@ -2,88 +2,214 @@
   "scene": 1,
   "entries": {
     "start": {
-      "response": "Time to get dressed. What outfit would you like to wear?",
+      "response": "What is your name?",
+      "input": {
+        "type": "text",
+        "var": "playerName",
+        "id": "seating"
+      }
+    },
+    "seating": {
+      "response": "You are attending a class and notice a student sitting in your regular seat. What do you say?",
       "options": [
         {
-          "id": "start",
-          "title": "Tuxedo and a suit",
-          "response": "That seems a bit much for the occasion. A more casual outfit would be better suited."
+          "id": "meetInSeat",
+          "title": "Hello, nice to meet you! I'm [playerName] What's your name?"
         },
         {
-          "id": "breakfast",
-          "title": "Jeans/khakis and a polo/button-up shirt",
-          "response": "That is a good choice which balances looks and comfort."
+          "id": "meetInSeat",
+          "title": "I'm [playerName]"
         },
         {
-          "id": "breakfast",
-          "title": "Shorts and a t-shirt",
-          "response": "It may be a better idea to be slightly better dressed for the occasion."
+          "id": "seating",
+          "title": "You're in my seat, move.",
+          "response": "Be kind"
         }
       ]
     },
-    "breakfast": {
-      "response": "It's time for breakfast. What do you want to eat?",
+    "meetInSeat": {
+      "response": "Hi there! My name is Sam. Nice to meet you!",
+      "character": "Sam",
       "options": [
         {
-          "id": "prePackingGame",
-          "title": "Fruit",
-          "image": "apple",
-          "response": "That is a good and healthy choice. You feel ready to take on the day!"
+          "id": "complement",
+          "title": "Nice to meet you too!"
         },
         {
-          "id": "prePackingGame",
-          "title": "Toast",
-          "response": "That wasn't a bad choice, but the apple would have been a healthier option."
+          "id": "complement",
+          "title": "Okay.",
+          "response": ""
         },
         {
-          "id": "breakfast",
-          "title": "Candy bar",
-          "response": "A healthier choice would be a better way to start your day."
+          "id": "",
+          "title": "I don't care.",
+          "response": "Be kind."
         }
       ]
     },
-    "prePackingGame": {
-      "response": "Time to pack. Are you ready?",
+    "complement": {
+      "response": "I really like your shirt, it looks good!",
+      "character": "Sam",
       "options": [
         {
-          "id": "packingGame",
-          "title": "Yes"
+          "id": "complementSelect",
+          "title": "(Say thanks and complement Sam)"
+        },
+        {
+          "id": "compliment",
+          "title": "(Nod, say nothing)",
+          "response": "Class is starting! See you later! (Can improve)"
+        },
+        {
+          "id": "compliment",
+          "title": "I don't like this shirt.",
+          "response": "Be courteous when accepting compliments"
         }
       ]
     },
-    "packingGame": {
-      "microgame": "Scenes/Packing",
-      "response": "Good job packing! Are you ready to brush your teeth now?",
+    "complementSelect": {
+      "response": "*you: Thanks, I like your: ",
+      "character": "[playerName]",
       "options": [
         {
-          "id": "hygeineGame",
-          "title": "Yes!"
+          "id": "complementShirt",
+          "title": "shirt"
+        },
+        {
+          "id": "complementShoes",
+          "title": "shoes"
+        },
+        {
+          "id": "complementBackpack",
+          "title": "backpack"
         }
       ]
     },
-    "hygeineGame": {
+    "complementShirt": {
+      "response": "Thanks, I got it last week!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "studying",
+          "title": "Cool, I bet it's a great shirt!"
+        },
+        {
+          "id": "studying",
+          "title": "Nice"
+        }
+      ]
+    },
+    "complementShoes": {
+      "response": "Thanks, I got them last week!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "studying",
+          "title": "Cool, I bet they're great shoes!"
+        },
+        {
+          "id": "studying",
+          "title": "Nice"
+        }
+      ]
+    },
+    "complementBackpack": {
+      "response": "Thanks, I've had it for years!",
+      "character": "Sam",
+      "options": [
+        {
+          "id": "studying",
+          "title": "Cool, I bet it's a great backpack!"
+        },
+        {
+          "id": "studying",
+          "title": "Nice"
+        }
+      ]
+    },
+    "studying": {
+      "response": "I'm worried about this midterm next week",
+      "options": [
+        {
+          "id": "availability",
+          "title": "Hey, would you like to study sometime?",
+          "response": "I'd like that!"
+        },
+        {
+          "id": "availability",
+          "title": "We should study sometime!",
+          "response": "I'd like that!"
+        },
+        {
+          "id": "studying",
+          "title": "Study with me sometime.",
+          "response": "Be kind"
+        }
+      ]
+    },
+    "availability": {
+      "response": "When are you available?",
+      "options": [
+        {
+          "id": "availability",
+          "title": "Monday at 4PM",
+          "response": "I'm not available at this time! Could you do another?"
+        },
+        {
+          "id": "end",
+          "scene": "2",
+          "title": "Wednesday at 12:30PM",
+          "response": "Sounds good, I'll see you then"
+        },
+        {
+          "id": "end",
+          "scene": "2",
+          "title": "Thursday at 10AM",
+          "response": "Sounds good, I'll see you then"
+        }
+      ]
+      //"input": {
+      //  "type": "calendar",
+      //  "var": "calendar",
+      //  "id": ""
+      //}
+    }
+    //"availabilityResponse": {
+    //  //"response": "I'm not available at this time! Could you do another?",
+    //  "response": "Sounds good, I'll see you then!",
+    //  //"charImage": "calendar"
+    //  /*"input": {
+    //    "type": "calendar",
+    //    "var": "calendar",
+    //    "id": ""
+    //  }*/
+    //}
+
+
+
+
+
+
+    /*"hygeineGame": {
       "microgame": "Scenes/Hygiene",
       "response": "You feel fresh and clean!\fYour destination is 30 minutes away. When should you leave to arrive on time by 11AM?",
       "options": [
         {
           "id": "end",
-          "scene": "2",
           "title": "10:20",
           "response": "You get there 10 minutes before everyone. You can leave a bit later and still arrive on time in the future."
         },
         {
           "id": "end",
-          "scene": "2",
           "title": "10:30",
           "response": "You show up on time and begin studying."
         },
         {
           "id": "end",
-          "scene": "2",
           "title": "10:40",
           "response": "You get there 10 minutes after everyone. It may be better to leave slightly earlier next time."
         }
       ]
-    }
+    }*/
   }
 }
