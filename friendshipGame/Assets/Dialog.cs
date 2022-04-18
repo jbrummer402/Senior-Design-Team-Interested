@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-// using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using UnityEngine;
 public class Dialog
@@ -34,8 +34,8 @@ public class Dialog
     public IDictionary<string, Entry> entries;
 
     public static Dialog CreateFromJSON(string jsonString) {
-        // return JsonConvert.DeserializeObject<Dialog>(jsonString);
-        return new Dialog();
+        return JsonConvert.DeserializeObject<Dialog>(jsonString);
+        //return new Dialog();
     }
 
     public static Dialog CreateFromFile(string scene) {

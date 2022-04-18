@@ -6887,12 +6887,12 @@ MonoBehaviour:
   Response1Text: {fileID: 1437447670}
   Response2Text: {fileID: 13579981}
   Response3Text: {fileID: 629499184}
-  Response4Text: {fileID: 0}
+  Response4Text: {fileID: 592086505}
   ContinueBtn: {fileID: 946286946}
   Response1Btn: {fileID: 634021151}
   Response2Btn: {fileID: 1202291158}
   Response3Btn: {fileID: 1511043141}
-  Response4Btn: {fileID: 0}
+  Response4Btn: {fileID: 865790569}
   PromptText: {fileID: 1549230199}
   CharName: {fileID: 76725730}
   CharImage: {fileID: 1427881494}
