@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject Backpack;
     [SerializeField] ScoreScript ScoreScript;
+    [SerializeField] PauseGame PauseGame;
     [SerializeField] private GameObject badge;
+    [SerializeField] private Image negativeFeedbackBox;
+    [SerializeField] private TMP_Text negativeFeedback;
+    [SerializeField] private string negativeFeedbackText;
 
     private RectTransform rectTransform;
     private RectTransform backpackRectTransform;
@@ -35,7 +40,9 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
 
     public void OnDrag(PointerEventData eventData) {
       Debug.Log("OnDrag");
-      rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+      if (!PauseGame.isPaused) {
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+      }
     }
 
     public void OnEndDrag(PointerEventData eventData) {
@@ -58,7 +65,10 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
           badge.GetComponent<Image>().color = new Color32(255,255,255,255);
           gameObject.SetActive(false);
         } else {
+          PauseGame.Pause();
           rectTransform.anchoredPosition = spawnPoint;
+          negativeFeedback.text = negativeFeedbackText;
+          negativeFeedbackBox.gameObject.SetActive(true);
         }
       }
     }
