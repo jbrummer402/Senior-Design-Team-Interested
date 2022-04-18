@@ -7,4 +7,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void LoadSceneNumber(int sceneNum) {
+        PlayerPrefs.SetString("CurScene", sceneNum.ToString());
+        SceneManager.LoadScene("TalkingSections");
+    }
 }

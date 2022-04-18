@@ -35,7 +35,7 @@ public class Dialog
 
     public static Dialog CreateFromJSON(string jsonString) {
         return JsonConvert.DeserializeObject<Dialog>(jsonString);
-        //return new Dialog();
+        // return new Dialog();
     }
 
     public static Dialog CreateFromFile(string scene) {
@@ -45,6 +45,7 @@ public class Dialog
 
     public Boolean HasEntry(string id) {
         return entries.ContainsKey(id);
+        // return false;
     }
 
     public Entry GetEntry(string id) {
